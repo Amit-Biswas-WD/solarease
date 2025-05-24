@@ -28,7 +28,7 @@ export default function Home() {
           <HomeBanner />
         </div>
         <HomeOurServices />
-        {/* <HomeOurProduct /> */}
-        <Footer />
+        <HomeOurProduct />
+        {/* <Footer /> */}
       </div>
       </>)}
