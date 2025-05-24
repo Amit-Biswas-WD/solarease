@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&family=Titillium+Web:wght@200;300;400;600;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* Apply Fonts */
+  @apply font-se-titillium;
+  /* Apply Transition and Duration */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-se-smooch; /* Apply Smooch Sans to headings */
+}
+
+@layer components {
+  /* Define Custom Button Styles */
+  .se-button-primary {
+    @apply text-sm md:text-base lg:text-lg xl:text-xl rounded-full bg-se-primary px-6 py-2.5 font-medium text-se-white shadow-sm hover:bg-se-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-se-secondary transition-all duration-300;
+  }
+
+  .se-button-secondary {
+    @apply text-sm md:text-base lg:text-lg xl:text-xl rounded-full bg-se-white px-6 py-2.5 font-medium text-se-primary hover:text-se-white shadow-sm hover:bg-se-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-se-secondary transition-all duration-300;
+  }
+
+  /* Define Custom Heading Styles */
+  .se-h1 {
+    @apply text-6xl md:text-7xl lg:text-8xl font-semibold tracking-wide transition-all duration-300;
+  }
+
+  .se-h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide transition-all duration-300;
+  }
+
+  .se-h3 {
+    @apply text-2xl lg:text-3xl font-semibold tracking-wide transition-all duration-300;
+  }
+
+  .se-h4 {
+    @apply text-xl lg:text-2xl font-semibold tracking-wide transition-all duration-300;
+  }
+
+  .se-h6 {
+    @apply text-base lg:text-lg xl:text-xl transition-all duration-300;
+  }
+
+  /* Define Custom Paragraph Styles */
+  .se-p {
+    @apply text-sm lg:text-base xl:text-lg transition-all duration-300;
+  }
+
+  /* Define Custom Margin Styles */
+  .se-my5-8 {
+    @apply my-5 md:my-6 lg:my-7 xl:my-8 transition-all duration-300;
+  }
+
+  .se-my3-6 {
+    @apply my-3 md:my-4 lg:my-5 xl:my-6 transition-all duration-300;
+  }
+
+  /* Define Custom Margin Styles */
+  .se-card-height {
+    @apply h-60 md:h-80 xl:h-[380px] transition-all duration-300;
+  }
+}
